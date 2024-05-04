@@ -562,35 +562,31 @@
         <section class="timeline">
 
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="document-outline"></ion-icon>
-            </div>
             <!DOCTYPE html>
             <html lang="en">
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Button with Ionic Icon</title>
-                <!-- Include Ionic's CSS -->
-                <link rel="stylesheet" img src="./assets/images/Hamzh-resume.pdf">
+                <title>Download Resume</title>
+                <script>
+                    function downloadResume() {
+                        // Replace 'path/to/resume.pdf' with the actual URL of your PDF file
+                        const pdfFileUrl = './assets/images/Hamzh-resume.pdf';
+                        window.open(pdfFileUrl, '_blank');
+                    }
+                </script>
             </head>
             <body>
-            
-            <!-- Button with Ionic Icon and Text -->
-            <button onclick="openPDF()">
-              <h3 class= "h3">Download Resume</h3>
-            </button>
-            
-            <script>
-              function openPDF() {
-                // Replace 'path/to/resume.pdf' with the actual URL of your PDF file
-                const pdfFileUrl = './assets/images/Hamzh-resume.pdf';
-                window.open(pdfFileUrl, '_blank');
-              }
-            </script>
-            
+                <button class="button" onclick="downloadResume()">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Resume</span>
+                    </span>
+                </button>
             </body>
             </html>
+            
+            
             
             <li class="filter-item">
             </li>
