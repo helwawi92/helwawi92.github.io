@@ -508,49 +508,97 @@ main {
 /**
  * #service 
  */
-
-.service { margin-bottom: 35px; }
-
-.service-title { margin-bottom: 20px; }
-
-.service-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+.container {
+  display: flex;
+  justify-content: center; /* Distribute space evenly between and around items */
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  gap: 35px; /* Adjust this for spacing between cards */
 }
 
-.service-item {
+.myCard {
+  background-color: transparent;
+  width: 108px;
+  height: 108px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: .5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
   position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
 
-.service-item::before {
-  content: "";
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
   position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(26, 26, 26, 0.8);
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 0.3em rgba(22, 22, 22, 0.5);
+
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient( to bottom right, hsl(240, 4%, 14%) 3%, hsl(240, 2%, 14%) 97% )
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #fdd047 0%, #f5b800 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  position: absolute;
   z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
 }
 
-.service-icon-box { margin-bottom: 10px; }
-
-.service-icon-box img { margin: auto; }
-
-.service-content-box { text-align: center; }
-
-.service-item-title { margin-bottom: 7px; }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
+/* Optionally, you can define responsive behavior for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    justify-content: center; /* Center items on smaller screens */
+  }
 }
+
 
 
 /**
@@ -726,7 +774,7 @@ main {
 .clients { margin-bottom: 15px; }
 
 .clients-list {
-  display: flex;
+  display:flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
@@ -737,7 +785,6 @@ main {
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
 }
 
 .clients-item {
@@ -746,7 +793,7 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 30%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
