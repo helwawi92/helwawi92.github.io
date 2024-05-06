@@ -1,1260 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/image-hamzeh.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Hamzeh Elwawi</h1>
-
-          <p class="title">Network Engineer | Cisco Meraki .:|:. .:|:.</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">helwawi92@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Network</p>
-
-              <a href="https://www.linkedin.com/in/hamzeh-elwawi-b5b465115/" class="contact-link">LinkedIn</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Instagram</p>
-
-              <a href="https://www.instagram.com/helwawi92/?hl=en" class="contact-link">helwawi92</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <a href="https://www.google.com/maps/place/Chicago,+IL/@41.8337329,-87.7319639,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu" class="contact-link">Chicago, IL</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            As a self-motivated and knowledgeable Network Engineer with over 7 years of experience in Cisco 
-            technology, Meraki SD-WAN, Routing, Switching, Firewalls, LAN/WAN, and IT Helpdesk, I possess a proven 
-            track record in engineering, supporting, troubleshooting and presenting enterprise network solutions. 
-            My expertise in training and ability to simplify complex technical concepts make me an excellent
-            technical instructor. I am known for my strong customer service skills, relationship management 
-            abilities, and exceptional organizational skills, which enable me to effectively prioritize and 
-            manage multiple tasks while meeting deadlines. I am committed to continuous learning and growth, 
-            and approach new situations with creativity and a desire to find innovative solutions. I am a 
-            responsible and dependable professional who strives for positive advancement in the workplace.
-            Always striving to adapt to new situations and discover creative solutions.
-
-          </p>
-        </section>
-
-
-        <div class="container-row">
-
-          <!-- Service Row 1 -->
-          <h3 class="h3 service tittle">My Skills</h3>
-          <div class="container">
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                        <img src="./assets/images/cisco-meraki.png" alt="design icon"width="70">
-                      </div>
-                      <div class="backSide">
-                          <p class="title">Configured, and managed Cisco Meraki series Firewall, Switches, Access Points, MDM and Meraki API</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                        <img src="./assets/images/cisco-systems.png" alt="design icon"width="80">
-                      </div>
-                      <div class="backSide">
-                          <p class="title">Configured, managed and replaced arround 30 Cisco WAN Router, with IKEv2 VPN Tunnel</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                        <img src="./assets/images/docker-container.png" alt="design icon"width="80">
-
-                      </div>
-                      <div class="backSide">
-                          <p class="title">Configured Docker container for homelab</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                        <img src="./assets/images/proxmox.png" alt="design icon"width="80">
-
-                      </div>
-                      <div class="backSide">
-                          <p class="title">Deployed Linux servers Features such as Virtualization such as CML and EVE-NG or Linux Services</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      <div class="container-row">
-         
-         <!--        
-        ------------ Service Row 2 ---------------
-
-          <div class="container">
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                          <p class="title">FRONT SIDE</p>
-                          <p>Hover Me</p>
-                      </div>
-                      <div class="backSide">
-                          <p class="title">BACK SIDE</p>
-                          <p>Leave Me</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                        <img src="./assets/images/cisco-meraki.png" alt="design icon"width="100">
-                      </div>
-                      <div class="backSide">
-                          <p class="title">BACK SIDE</p>
-                          <p>Leave Me</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                          <p class="title">FRONT SIDE</p>
-                          <p>Hover Me</p>
-                      </div>
-                      <div class="backSide">
-                          <p class="title">BACK SIDE</p>
-                          <p>Leave Me</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="myCard">
-                  <div class="innerCard">
-                      <div class="frontSide">
-                          <p class="title">FRONT SIDE</p>
-                          <p>Hover Me</p>
-                      </div>
-                      <div class="backSide">
-                          <p class="title">BACK SIDE</p>
-                          <p>Leave Me</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-        -->     
-
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">My Certs</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/ccna_600.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Cisco_Specialist_600.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Download Resume</title>
-                <script>
-                    function downloadResume() {
-                        // Replace 'path/to/resume.pdf' with the actual URL of your PDF file
-                        const pdfFileUrl = './assets/images/Hamzh-resume.pdf';
-                        window.open(pdfFileUrl, '_blank');
-                    }
-                </script>
-            </head>
-            <body>
-                <button class="button" onclick="downloadResume()">
-                    <span class="button_lg">
-                        <span class="button_sl"></span>
-                        <span class="button_text">Download Resume</span>
-                    </span>
-                </button>
-            </body>
-            </html>
-            
-            
-            
-            <li class="filter-item">
-            </li>
-          </div>
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Ohio State University</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Industrial Engineer, Computer Science
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Columbus State</h4>
-
-              <span>2011 — 2013</span>
-
-              <p class="timeline-text">
-                Pre-requisite Program
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Hilliard Bradley High School</h4>
-
-              <span>2009 — 2011</span>
-
-              <p class="timeline-text">
-                Diploma
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cisco Systems INC</h4>
-              <h4 class="h4 timeline-item-title">Sr. Network Engineer</h4>
-
-              <span>June 2022 — Present</span>
-
-              <p class="timeline-text">
-                •	Technical collaboration with the sales team to enable new business opportunities resulting in $37.9 Million in sales.
-              </p>
-              <p class="timeline-text">
-                •	Responsible for designing, building, and deploying more than 1000’s of Meraki SD-WAN devices in a revenue - critical financial trading network that featured high redundancy and availability.
-              </p>
-              <p class="timeline-text">
-                •	Deployed SD-WAN technologies to create efficient and scalable network solutions for Enterprise LAN and WAN environments.
-                </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DataPlus INC</h4>
-              <h4 class="h4 timeline-item-title">Network EngineerC</h4>
-
-
-              <span>2019 — 2022</span>
-
-              <p class="timeline-text">
-                •	Predominant role in helping the Company reach its annual residual revenue of $1.2M through fast deployments and maintenance in the Midwestern SMB market, with a forecasted positive future growth.
-              </p>
-              <p class="timeline-text">
-                •	Supported the Senior Network Engineers in design, implementation, and security of networks to meet customers’ business requirements.
-              </p>
-              <p class="timeline-text">
-                •	Creating automated scripts using Python language to configure network devices in a multivendor environment.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Merchant Data LLC</h4>
-              <h4 class="h4 timeline-item-title">Network Engineer</h4>
-
-
-              <span>2016 — 2019</span>
-
-              <p class="timeline-text">
-                •	Delivered Network support and maintenance for over hundreds of endpoints for hardware such as Routers (ISR 4300, 4400 and ASR 1001), Switches (3850x, 3750x, 2960x, and 6500), printers (Xerox, HP, Sharp), PCs (Windows, HP, Lenovo, and Asus), and Access Points
-              </p>
-              <p class="timeline-text">
-                •	Troubleshot system and end-user issues remotely and on site at customer’s location depending on the status of the incident.
-              </p>
-              <p class="timeline-text">
-                •	Performed installations, maintenance, and troubleshooting of LAN/WAN with TCP/IP, DHCP, switches and routers.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Routing</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Firewall</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Switching</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WPA</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Linux</h5>
-                <data value="50">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Virtualization</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Animesh Rawat. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+    <title>Animesh Rawat - Portfolio</title>
+
+    <!--==================== OPEN GRAPH META TAGS ===================== -->
+    <meta property="og:title" content="Animesh Rawat - Portfolio" />
+    <meta property="og:image" content="/assets/img/PwaImages/ios/512.png" />
+    <meta
+      property="og:description"
+      content="Portfolio website of Animesh Rawat. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+
+    <!--==================== TWITTER META TAGS ===================== -->
+    <meta name="twitter:title" content="Animesh Rawat - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio website of Animesh Rawat. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+    <meta name="twitter:image" content="/assets/img/PwaImages/ios/512.png" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- ====================PWA================== -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/32.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/72.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/100.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/128.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/144.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/152.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/192.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/256.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#6E57E0" />
+    <meta name="theme-color" content="#6E57E0" />
+
+    <!-- ============FAVICONS============== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets//img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/favicons/favicon.ico"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ===================== LOADER ==================== -->
+    <div id="loading">
+      <div class="loader"><span><</span><span>/></span></div>
     </div>
 
-  </main>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo noSelect">H.E.</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link noSelect active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link noSelect">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link noSelect">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link noSelect">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link noSelect">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link noSelect">
+                <i class="uil uil-message nav__icon"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle noSelect" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-10"
+                    xlink:href="assets/img/IMG_0978.jpg"
+                  ></image>
+                </g>
+              </svg>
+              <div class="card12">
+
+                                  
+                <a class="socialContainer containerThree" href="https://www.linkedin.com/in/hamzeh-elwawi-b5b465115/">
+                  <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                </a>
+                
+                <a class="socialContainer2 containerTwo" href="https://github.com/helwawi92" target="_blank">
+                  <svg viewBox="0 0 24 24" class="socialSvg githubSvg">
+                    <path fill="currentColor" d="M12 0a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58l-.01-2.05c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.82 2.8 1.3 3.48.99.1-.78.42-1.3.77-1.6-2.7-.3-5.54-1.35-5.54-6.03 0-1.33.48-2.42 1.23-3.27-.12-.3-.53-1.55.12-3.23 0 0 1.02-.33 3.34 1.25a11.72 11.72 0 0 1 6.18 0c2.32-1.58 3.34-1.25 3.34-1.25.65 1.68.24 2.93.12 3.23.75.85 1.23 1.94 1.23 3.27 0 4.7-2.85 5.73-5.56 6.03.44.38.83 1.13.83 2.28l-.01 3.39c0 .32.2.7.83.58A12 12 0 0 0 12 0z"/>
+                  </svg>
+                  
+                <a class="socialContainer3 containerOne" href="https://www.instagram.com/helwawi92/?hl=en">
+                  <svg viewBox="0 0 16 16" class="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+                </a>
+                
+              </div>             
+              
+              
+            </div>
+
+            <div class="home__data">
+              <h6 class="home__title">Hi!, I'm Hamzeh E.</h6>
+              <h3 class="home__subtitle">Network Engineer | Cisco Meraki .:|:..:|:.</h3>
+
+              <a href="mailto:?subject=Hello&body=Please%20enter%20your%20email%20here%3A">
+                <button>Say Hello
+                  <img src="./assets/img/send-icon.png" alt="Hello Icon" style="width: 20px; height: 20px;">
+                </button>
+              </a>
+              
+            </div>
+          </div>
 
 
+  </div>
+          
+       <!-- Container to hold the lines and text -->
+          <div class="home__scroll">           
+            </a>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <!--==================== ABOUT ====================-->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">----- About Me -----</h2>
+      <span class="section__subtitle"></span>
+
+      <div class="about__container container grid">
+        <img src="assets/img/test-design-deply.svg" alt="" class="about__image" />
+
+        <div class="about__data">
+          <p class="about__description">
+            Experienced Network Engineer with over 7 years in Cisco technology, Meraki SD-WAN, Routing, 
+            Switching, Firewalls, LAN/WAN, and IT Helpdesk. Proven track record in engineering, 
+            supporting, troubleshooting, and presenting enterprise network solutions. Skilled in 
+            simplifying complex technical concepts for effective training. Strong customer 
+            service, relationship management, and organizational abilities. Committed to 
+            continuous learning, creativity, and innovation in problem-solving. Responsible, 
+            dependable, and dedicated to positive workplace advancement.
+          </p>
 
 
+          <div class="about__buttons">
+            <a
+              download=""
+              href="assets/img/Hamzh-resume.pdf"
+              class="button button--flex"
+            >
+            <button>My Resume
+              <img src="./assets/img/document.png" alt="Download Resume" style="width: 20px; height: 20px;">
+            </button>            
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+
+    <section class="skills section" id="skills">
+      <h2 class="section__title">----- Skills & Tools ------</h2>
+      <span class="section__subtitle"></span>
+      <div class="skills__container container grid">        
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/cisco-meraki.svg"
+            alt="angular"
+
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/cisco-systems.svg"
+            alt="react"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/docker-container.svg"
+            alt="vue"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/proxmox.svg"
+            alt="typescript"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/wireshark.svg"
+            alt="javascript"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/cli-2.svg"
+            alt="html"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/python-logo.svg"
+            alt="css"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/evepng.svg"
+            alt="sass"
+          />
+          <div class="skills__container-name"></div>
+        </div>
+
+        <div class="card">
+          <img
+            class="skills__container-img"
+            src="/assets/img/cml2.svg"
+            alt="firebase"
+          />
+          <div class="skills__container-name"></div>
+        </div>
+
+        <!-- <div class="skills__container-box">
+                <img class="skills__container-img" src="/assets/img/skills/figma.svg" alt="figma">
+                <div class="skills__container-name">Figma</div>
+            </div> -->
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATOIN ====================-->
+
+    <section class="qualification section">
+      <h2 class="section__title">----- Experiance -----</h2>
+      <span class="section__subtitle">My journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div
+            class="qualification__button button--flex qualification__active"
+            data-target="#work"
+          >
+            <i class="uil uil-briefcase-alt qualification__icon"> </i> Work
+          </div>
+
+          <div
+            class="qualification__button button--flex"
+            data-target="#education"
+          >
+            <i class="uil uil-graduation-cap qualification__icon"> </i>
+            Education
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATOIN CONTENT 1====================-->
+          <div
+            class="qualification__content qualification__active"
+            data-content
+            id="work"
+          >
+            <!--==================== QUALIFICATOIN 1====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Network Administrator</h3>
+                <span class="qualification__subtitle"> Losi Hydraulik </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2014-2016
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Network Engineer</h3>
+                <span class="qualification__subtitle"> Merchant Data, LLC </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2016-2019
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 3====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Network Engineer</h3>
+                <span class="qualification__subtitle"> DataPlus, INC </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2019-2020
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 4====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">Sr. Network Engineer</h3>
+                <span class="qualification__subtitle"> Cisco Systems, INC </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2022-present
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== QUALIFICATOIN CONTENT 2====================-->
+          <div class="qualification__content" data-content id="education">
+            <!--==================== QUALIFICATOIN 1====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">High School</h3>
+                <span class="qualification__subtitle">
+                  Hilliard Bradley High School
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2009-2011
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+                <span class="qualification__rounder"></span>
+
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">College</h3>
+                <span class="qualification__subtitle"> Columbus State </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2011-2013
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATOIN 3====================-->
+            <div class="qualification__data">
+              <div>
+              <div>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">University</h3>
+                <span class="qualification__subtitle"> Ohio State University </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2013-2015
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+
+   
+        <!--==================== SERVICE 2 ====================-->
 
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!--==================== PROJECT IN MIND ====================-->
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">You have a new project ?</h2>
+            <p class="project__description">
+              I would love to chat with you about your project and see how we
+              can work together to create something truly amazing. Let's
+              connect.
+            </p>
+            <a href="#contact" class="button button--flex button--white">
 
-</body>
+              <a href="mailto:helwawi92@gmail.com?subject=Contact%20Me">
+                <button>Contact Me
+                  <img src="./assets/img/mail.png" alt="Mail Icon" style="width: 20px; height: 20px;">
+                </button>
+              </a>
+                     
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+   
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Hamzeh E.</h1>
+            <span class="footer__subtitle">Network Engineer | Cisco Meraki .:|:..:|:.</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact Me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+            href="https://www.linkedin.com/in/hamzeh-elwawi-b5b465115/"
+            target="_blank"
+            class="footer__social"
+          >
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+            <a
+              href="https://www.instagram.com/helwawi92/?hl=en"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/rawataniimesh?lang=en"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Hamzeh E. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ===================== SHOW/HIDE LOADER ==================== -->
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+    </script>
+
+    <!-- =====================REGISTER SERVICE WORKER================ -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
+  </body>
 </html>
