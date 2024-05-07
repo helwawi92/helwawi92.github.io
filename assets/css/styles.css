@@ -544,7 +544,7 @@ button:active {
   height: 183px;
   background: #dcbce9;
   border: solid 4px #333;
-  box-shadow: -5px 5px #333;
+  box-shadow: 5px 6px #252525;
   transition: all .2s ease-in-out;
   display: flex;
   align-items: center;
@@ -1045,19 +1045,22 @@ button:active {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
-  opacity: 0.8;
+  background-color: #f3be00;
+  opacity: 0.9;
   padding: 0 0.3rem;
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transform: 0.4s;
+  box-shadow: 0.3m 0.3m;
+  border: 3px solid black;
+  box-shadow: 0.3em 0.3em rgba(0, 0, 0, 1);
 }
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  background-color: #2da037;
 }
 .scrollup__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: #000000;
 }
 
 /* Show scroll */
