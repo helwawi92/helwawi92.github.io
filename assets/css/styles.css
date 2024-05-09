@@ -75,7 +75,7 @@ body.dark-theme {
   --title-color: hsl(184, 5%, 27%);
   --text-color: hsl(184, 5%, 27%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(139.68deg 27.72% 77.45%);
+  --body-color: #D7D9D7;
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -359,11 +359,10 @@ header {
 
 .home__blob {
   width: 200px;
-  fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 255px;
+  width: 200px;
 }
 
 .home__data {
@@ -542,7 +541,7 @@ button:active {
   position: relative;
   width: 140px;
   height: 183px;
-  background: #dcbce9;
+  background: #f3be00;
   border: solid 4px #333;
   box-shadow: 5px 6px #252525;
   transition: all .2s ease-in-out;
@@ -554,7 +553,7 @@ button:active {
 }
 
 .card:hover {
-  margin: 10px 10px 0 0;
+  width: 10px 10px 0 0;
   box-shadow: 0px 0px #333;
 
 }
@@ -1466,3 +1465,236 @@ button:active {
     opacity: 1;
   }
 }
+
+
+/********** All Posts Page ***************/
+
+
+.card1 {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 5px #323232;
+  border: 3px solid #323232;
+  position: fixed;
+  left: 0; /* Position the element at the left edge of the viewport */
+  top: 75px; /* Adjust the top position to move it down from the top */
+  height: 70vh; /* Make the element's height equal to the viewport height */
+  width: 15%; /* Set the width to 25% of the viewport width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .card1 {
+      width: 100%; /* On smaller screens, fill the entire width */
+      height: auto; /* Allow height to adjust based on content */
+      border-radius: 0; /* Remove border radius on smaller screens */
+      top: 10px; /* Adjust the top position for smaller screens */
+  }
+}
+
+.title1 {
+  display: flex;
+  align-items: center;
+}
+
+.title1 span {
+  position: relative;
+  padding: 0.5rem;
+  background-color: #10B981;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+}
+
+.title1 span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  height: 1rem;
+}
+
+.title-text1 {
+  margin-left: 0.5rem;
+  color: #374151;
+  font-size: 18px;
+}
+
+.percent1 {
+  margin-left: 0.5rem;
+  color: #02972f;
+  font-weight: 600;
+  display: flex;
+}
+
+.data1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.data1 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.data1 .range1 {
+  position: relative;
+  background-color: #E5E7EB;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.data1 .range1 .fill1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #10B981;
+  width: 76%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+
+/************* Posts ******************/
+
+.card3 {
+  width: 100%;
+  margin: auto;
+  max-width: 750px;
+  height: 325px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: .3rem;
+  background-color: #fff;
+  box-shadow: 1px 5px #333;
+}
+
+.header3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: right;
+  max-width: 96%;
+}
+
+.title3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: rgb(21, 39, 17);
+  text-decoration: none;
+}
+
+.title3:hover {
+  text-decoration: underline;
+  color: royalblue;
+}
+
+.name3 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: rgb(44, 180, 51);
+  text-align: right; /* Align name text to the right */
+  margin-top: 10%;
+}
+
+.image3 {
+  display: flex;
+  flex-shrink: 0;
+  height: 19.6rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  object-fit:cover;
+}
+
+
+.description3 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(17, 24, 39, 1);
+  margin-top: 3rem;
+  text-align: left; /* Align description text to the right */
+}
+
+.post-info3 {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Align post-info to the right */
+}
+
+.dt3 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgba(75, 85, 99, 1);
+}
+
+.dd3 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.skills__container3 {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+@media (max-width: 768px) {
+  .header3 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the container */
+  }
+
+  .image3 {
+    width: 100%; /* Make image full width */
+    height: auto; /* Auto-adjust height */
+    margin-bottom: 1rem; /* Add space between image and text */
+  }
+
+  .name3 {
+    margin-top: 0; /* Remove top margin for name */
+    text-align: center; /* Center name text */
+  }
+  
+  .description3 {
+    font-size: 0.75rem; /* Decrease font size for mobile */
+    text-align: center; /* Center description text */
+  }
+
+  .card3 {
+    width: 100%;
+    margin: auto;
+    max-width: 750px;
+    height: 510px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: .3rem;
+    background-color: #fff;
+    box-shadow: 1px 5px #333;
+  }
+
+}
+
+
