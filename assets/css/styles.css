@@ -754,6 +754,32 @@ button:active {
   color: var(--first-color);
 }
 
+
+.certification-images {
+  display: flex;
+  justify-content: space-around; /* Center items along the main axis (horizontally) */
+  align-items: center; /* Center items along the cross axis (vertically) */
+  flex-wrap: wrap; /* Allow items to wrap to a new line if needed */
+  margin-top: 5%;
+}
+
+.certification-item {
+  text-align: center; /* Center the content (image and text) inside each item */
+  width: 30%; /* Set a fixed width for each item */
+  padding: 0 10px; /* Add padding around each item */
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+.certification-item img {
+  max-width: 50%; /* Ensure images don't exceed the width of their containers */
+}
+
+.qualification__subtitle {
+  display: block; /* Display the subtitle as a block-level element */
+  margin-top: 10px; /* Add space between image and subtitle */
+}
+
+
 /*==================== SERVICES ====================*/
 
 .services__container {
